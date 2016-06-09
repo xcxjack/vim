@@ -4,7 +4,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'dracula/vim'
+Plugin 'vim-airline/vim-airline'
 call vundle#end()
 
 source ~/.vim_runtime/vimrcs/basic.vim
