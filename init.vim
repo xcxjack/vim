@@ -5,6 +5,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline/vim-airline'
+Plugin 'majutsushi/tagbar'
 call vundle#end()
 
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -25,6 +26,7 @@ endtry
 " color dracula
 
 "set background=dark
+let g:NERDTreeWinPos = "left"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='jellybeans'
 let g:airline_powerline_fonts = 1
@@ -33,6 +35,7 @@ let g:NERDTreeShowHidden = 0     "显示隐藏文件
 nmap <F3> :NERDTreeToggle<cr>
 nmap <F4> :call ToggleLineNumber()<cr>
 nmap <F5> :vert diffsplit <c-r>=expand("%:p:h")<cr>/
+nmap <F6> :TagbarToggle<cr>
 nmap <leader>q :q<cr>
 nmap <leader>x :wq<cr>
 nmap \ :e <c-r>=expand("%:p:h")<cr>/
