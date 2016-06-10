@@ -6,6 +6,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-airline/vim-airline'
 Plugin 'majutsushi/tagbar'
+Plugin 'sickill/vim-monokai'
 call vundle#end()
 
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -24,8 +25,9 @@ endtry
 " endtry
 
 " color dracula
-
-"set background=dark
+set foldcolumn=0
+colorscheme monokai
+set background=dark
 let g:NERDTreeWinPos = "left"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='jellybeans'
