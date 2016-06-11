@@ -26,6 +26,7 @@ endtry
 
 " color dracula
 set foldcolumn=0
+set nu
 colorscheme monokai
 set background=dark
 let g:NERDTreeWinPos = "left"
@@ -62,7 +63,7 @@ nmap <M-8> 8gt
 nmap <M-9> 9gt
 nmap <M-r> :%s/
 
-let g:lineNumber = 0
+let g:lineNumber = 1
 function! ToggleLineNumber() 
     if g:lineNumber == 0
         set nu
